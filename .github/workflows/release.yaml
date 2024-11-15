@@ -14,6 +14,7 @@ jobs:
         with:
           go-version-file: ./go.mod
           cache: false
+      - run: ls
       - uses: goreleaser/goreleaser-action@v6
         with:
           args: release --clean
